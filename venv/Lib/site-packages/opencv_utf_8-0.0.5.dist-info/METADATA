@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: opencv-utf-8
+Version: 0.0.5
+Summary: Support opencv read and write image using utf-8 paths
+Home-page: https://github.com/azzhu/opencv-utf-8
+Author: azzhu
+Author-email: zhu.qingjie@qq.com
+License: MIT
+Project-URL: Source Code, https://github.com/azzhu/opencv-utf-8
+Project-URL: Bug Tracker, https://github.com/azzhu/opencv-utf-8/issues
+Project-URL: Documentation, https://github.com/azzhu/opencv-utf-8
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+
+
+## Opencv读写图像对utf-8路径（包括中文路径）的支持
+
+**Support opencv reading and writing image using utf-8 paths.**
+
+### Install
+
+Install using pip:
+
+```commandline
+pip install opencv-utf-8
+```
+
+or:
+
+```commandline
+pip install -i https://pypi.org/simple/ opencv-utf-8
+```
+
+### Usage
+
+```python
+import cv2_ext
+import cv2
+
+img = cv2_ext.imread(r'E:\壁纸\pc-twoup-weibu.jpg')
+cv2.imshow('', img)
+cv2.waitKey()
+
+cv2_ext.imwrite(r'E:\壁纸\pc-twoup-weibu_中文.tif', img)
+```
+
+
+Thanks.
+
+Good luck bro.
+
