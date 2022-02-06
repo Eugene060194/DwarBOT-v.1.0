@@ -1,6 +1,0 @@
-
-py -3.9 -m PyInstaller -w -F -i "C:\Users\eugen\Desktop\it_projects\dwarBOT\icon.ico" dwarBOT_interface.py
-
-из спецификации
-
-py -3.9 -m PyInstaller dwarBOT_interface.spec
